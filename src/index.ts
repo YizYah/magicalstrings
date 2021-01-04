@@ -1,42 +1,47 @@
-export * from './exports/configs/getConfig'
-export * from './exports/configs/getIgnoredList'
-export * from './exports/configs/setConfig'
+module.exports.configs = {
+    getConfig: require('./exports/configs/getConfig').getConfig,
+    getIgnoredList: require('./exports/configs/getIgnoredList').getIgnoredList,
+    setConfig: require('./exports/configs/setConfig').setConfig,
+}
 
-export * from './exports/nsFiles/getNsInfo'
-export * from './exports/nsFiles/setNsInfo'
+module.exports.nsFiles = {
+    getNsInfo: require('./exports/nsFiles/getNsInfo').getNsInfo,
+    setNsInfo: require('./exports/nsFiles/setNsInfo').setNsInfo
+}
 
-export * from './exports/constants/chalkColors'
-export * from './exports/constants/fileOptions'
-export * from './exports/constants/index'
-export * from './exports/constants/parseSpecName'
+module.exports.constants = require('./exports/constants/index')
+module.exports.constants.chalkColors = require('./exports/constants/chalkColors')
+module.exports.constants.fileOptions = require('./exports/constants/fileOptions')
+module.exports.constants.parseSpecName = require('./exports/constants/parseSpecName')
 
-export * from './exports/constants/types/configuration'
-export * from './exports/constants/types/custom'
-export * from './exports/constants/types/dingKats'
-export * from './exports/constants/types/nsInfo'
-export * from './exports/constants/types/schema'
+module.exports.constants.types = {}
+module.exports.constants.types.configuration = require('./exports/constants/types/configuration')
+module.exports.constants.types.custom = require('./exports/constants/types/custom')
+module.exports.constants.types.dingKats = require('./exports/constants/types/dingKats')
+module.exports.constants.types.nsInfo = require('./exports/constants/types/nsInfo')
+module.exports.constants.types.schema = require('./exports/constants/types/schema')
 
-export * from './exports/constants/Regex/regExCleanupText'
-export * from './exports/constants/Regex/regExCustomCleanup'
-export * from './exports/constants/Regex/regExCustomLocation'
-export * from './exports/constants/Regex/regExFileInfo'
-export * from './exports/constants/Regex/regExNewCustomLocation'
-export * from './exports/constants/Regex/regExObjectValueString'
-export * from './exports/constants/Regex/regExReplacedCodeSection'
-export * from './exports/constants/Regex/regExShared'
-export * from './exports/constants/Regex/regExTemplateAbbreviation'
+module.exports.constants.Regex = {}
+module.exports.constants.Regex.regExCleanupText = require('./exports/constants/Regex/regExCleanupText')
+module.exports.constants.Regex.regExCustomCleanup = require('./exports/constants/Regex/regExCustomCleanup')
+module.exports.constants.Regex.regExCustomLocation = require('./exports/constants/Regex/regExCustomLocation')
+module.exports.constants.Regex.regExFileInfo = require('./exports/constants/Regex/regExFileInfo')
+module.exports.constants.Regex.regExNewCustomLocation = require('./exports/constants/Regex/regExNewCustomLocation')
+module.exports.constants.Regex.regExObjectValueString = require('./exports/constants/Regex/regExObjectValueString')
+module.exports.constants.Regex.regExReplacedCodeSection = require('./exports/constants/Regex/regExReplacedCodeSection')
+module.exports.constants.Regex.regExShared = require('./exports/constants/Regex/regExShared')
+module.exports.constants.Regex.regExTemplateAbbreviation = require('./exports/constants/Regex/regExTemplateAbbreviation')
 
-export * from './exports/inflections'
-export * from './exports/testCodeDir'
-export * from './exports/isRequired'
-export * from './exports/ensureDirectory'
-export * from './exports/codeNameFromPath'
-export * from './exports/resolveDir'
-export * from './exports/inflections'
-export * from './exports/dirOptions'
-export * from './exports/removeNpmDependencyPrefix'
-export * from './exports/copyCodeBaseToNewDir'
-export * from './exports/fileMatchesCustomFileFilter'
-export * from './exports/moveOverIgnored'
-export * from './exports/errorMessage'
 
+module.exports.testCodeDir = require('./exports/testCodeDir')
+module.exports.isRequired = require('./exports/isRequired')
+module.exports.ensureDirectory = require('./exports/ensureDirectory')
+module.exports.codeNameFromPath = require('./exports/codeNameFromPath')
+module.exports.resolveDir = require('./exports/resolveDir')
+module.exports.inflections = require('./exports/inflections')
+module.exports.dirOptions = require('./exports/dirOptions')
+module.exports.removeNpmDependencyPrefix = require('./exports/removeNpmDependencyPrefix')
+module.exports.copyCodeBaseToNewDir = require('./exports/copyCodeBaseToNewDir')
+module.exports.fileMatchesCustomFileFilter = require('./exports/fileMatchesCustomFileFilter')
+module.exports.moveOverIgnored = require('./exports/moveOverIgnored')
+module.exports.errorMessage = require('./exports/errorMessage')

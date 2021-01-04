@@ -2,16 +2,26 @@ a lot of constants and some incantations for working with genies.
 
 # Contents
 ## Config Files
-getConfig
+There are 3 functions for working with config files.
+```
+const {getConfig} = require('magicalstrings').configs 
+```
+```
+const {setConfig} = require('magicalstrings').configs 
+```
+```
+const {getIgnoredList} = require('magicalstrings').configs 
+```
 
-setConfig
-
-getIgnoredList
 
 ## Settings
+These functions are for retrieving and updating settings.
+```
 getNsInfo
-
+```
+```
 setNsInfo
+```
 
 ## Constants
 chalkColors: a number of terms used consistently in the UI 
@@ -26,56 +36,46 @@ parseSpecName
 configuration
 
 ## Types
+### custom
 custom
 
-dingKats: digbats for kats
-
-nsInfo
-
+### schema
 schema
 
+### dingbats
+```
+dingKats 
+```
+
+### nsInfo
+nsInfo
+
 ## RegEx
-regExCleanupText
+A number of Regex utilities.
 
-regExCustomCleanup
-
-regExCustomLocation
-
-regExFileInfo
-
-regExNewCustomLocation
-
-regExReplacedCodeSection
-
-regExObjectValueString
-
-regExShared
-
-regExTemplateAbbreviation
+* regExCleanupText
+* regExCustomCleanup
+* regExCustomLocation
+* regExFileInfo
+* regExNewCustomLocation
+* regExReplacedCodeSection
+* regExObjectValueString
+* regExShared
+* regExTemplateAbbreviation
 
 ## Functions
-inflections
+Several functions used by genies and copykats.
 
-testCodeDir
-
-isRequired
-
-ensureDirectory
-
-codeNameFromPath
-
-resolveDir
-
-inflections
-
-dirOptions
-
-removeNpmDependencyPrefix
-
-copyCodeBaseToNewDir
-
-fileMatchesCustomFileFilter
-
-moveOverIgnored
-
-errorMessage
+* inflections
+* testCodeDir
+* isRequired
+* ensureDirectory
+* codeNameFromPath
+* resolveDir
+* inflections
+* dirOptions
+* removeNpmDependencyPrefix
+* copyCodeBaseToNewDir
+* fileMatchesCustomFileFilter
+* moveOverIgnored
+* errorMessage
