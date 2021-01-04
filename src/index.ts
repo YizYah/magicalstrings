@@ -6,7 +6,7 @@ module.exports.configs = {
 
 module.exports.nsFiles = {
     getNsInfo: require('./exports/nsFiles/getNsInfo').getNsInfo,
-    setNsInfo: require('./exports/nsFiles/setNsInfo').setNsInfo
+    setNsInfo: require('./exports/nsFiles/setNsInfo').setNsInfo,
 }
 
 module.exports.constants = require('./exports/constants/index')
