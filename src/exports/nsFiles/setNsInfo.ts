@@ -9,7 +9,7 @@ export async function setNsInfo(codeDir: string, nsInfo: NsInfo) {
   let outputContents
   try {
     if (nsInfo) {
-      outputContents = yaml.safeDump(nsInfo)
+      outputContents = yaml.dump(nsInfo)
       await fs.outputFile(nsFile, outputContents)
     }
   } catch (error) {
