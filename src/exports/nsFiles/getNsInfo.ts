@@ -9,7 +9,7 @@ export async function getNsInfo(codeDir: string) {
   const nsFile = codeDir + `/${dirNames.META}/` + fileNames.NS_FILE
   try {
     const nsYml = fs.readFileSync(nsFile, 'utf8')
-    nsInfo = await yaml.safeLoad(nsYml)
+    nsInfo = await yaml.load(nsYml)
   } catch (error) {
     // eslint-disable-next-line no-console
     console.log('error opening ns.yml')
