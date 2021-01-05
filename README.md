@@ -1,6 +1,28 @@
-a lot of constants and some incantations for working with genies.
+A lot of constants and some incantations for working with genies. Used with [ns-flip](https://www.npmjs.com/package/ns-flip) tools.
 
-# Contents
+![](images/MAGICALSTRINGS-GIF.gif)
+
+You probably won't need to include this directly.  It would make more sense to use tools that access it, such as [copyKat](https://www.npmjs.com/package/copykat).
+
+# API
+{This will be filled out soon.}
+## Types
+Interfaces.
+### Configuration
+Configuration and subTypes
+
+### Settings (nsInfo)
+NsInfo and subTypes
+### Backend (schema)
+Schema and subTypes
+
+### Custom
+CustomCodeByFile and subTypes
+
+### General
+* Delimiter
+* BoilerPlateInfoType
+
 ## Config Files
 There are 3 functions for working with config files.
 ```
@@ -24,16 +46,16 @@ setNsInfo
 ```
 
 ## Constants
-chalkColors: a number of terms used consistently in the UI 
+### chalkColors
+A number of terms used consistently in the UI.
 
-fileOptions
+### fileOptions
 
+### parseSpecName
 
-Other Constants
+### configuration
 
-parseSpecName
-
-configuration
+### Other Constants
 
 ## Types
 ### custom

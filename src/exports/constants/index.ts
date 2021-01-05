@@ -31,12 +31,6 @@ export const unitTypes = {
   DATA_SOURCE: 'dataSource',
 }
 
-export interface BoilerPlateInfoType {
-  componentType: string;
-  dataType: string;
-  nodeType: string;
-}
-
 export const boilerplateDir = `${__dirname}/../../resources/boilerplates`
 
 export const typePrefixes = {
@@ -165,11 +159,6 @@ export const standardIgnored = [
   'meta',
   '.idea',
 ]
-
-export interface Delimiters {
-  open: string;
-  close: string;
-}
 
 export const questionNames = {
   SETTINGS_TYPE: 'settingsType',

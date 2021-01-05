@@ -3,6 +3,7 @@ export * from './exports/constants/types/configuration'
 export * from './exports/constants/types/nsInfo'
 export * from './exports/constants/types/schema'
 export * from './exports/constants/types/custom'
+export * from './exports/constants/types/general'
 
 /* following is everything else */
 export const configs = {
