@@ -1,6 +1,6 @@
 {
   "name": "magicalstrings",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "constants and a few incantations for dealing with genies",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
