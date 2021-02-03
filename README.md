@@ -1,12 +1,22 @@
-A lot of constants and some incantations for working with genies. Used with [ns-flip](https://www.npmjs.com/package/ns-flip) tools.
+A lot of constants and some incantations for working with genies. Used with [geenee](https://www.npmjs.com/package/geenee) tools.
 
 ![](images/MAGICALSTRINGS-GIF.gif)
 
 You probably won't need to include this directly.  It would make more sense to use tools that access it, such as [copyKat](https://www.npmjs.com/package/copykat).
 
-# API
+<!-- toc -->
+* [:pushpin: API](#api)
+* [:paperclip: Types](##types)
+* [:file_folder: Config Files](##config-files)
+* [:wrench: Settings](##settings)
+* [:triangular_ruler: Constants](##constants)
+* [:bookmark: RegEx](##regex)
+* [:memo: Functions](##functions)
+  <!-- tocstop -->
+
+# :pushpin: API
 {This will be filled out soon.}
-## Types
+## :paperclip: Types
 Interfaces.
 ### Configuration
 Configuration and subTypes
@@ -23,7 +33,7 @@ CustomCodeByFile and subTypes
 * Delimiter
 * BoilerPlateInfoType
 
-## Config Files
+## :file_folder: Config Files
 There are 3 functions for working with config files.
 ```
 const {getConfig} = require('magicalstrings').configs 
@@ -36,7 +46,7 @@ const {getIgnoredList} = require('magicalstrings').configs
 ```
 
 
-## Settings
+## :wrench: Settings
 These functions are for retrieving and updating settings.
 ```
 getNsInfo
@@ -45,7 +55,7 @@ getNsInfo
 setNsInfo
 ```
 
-## Constants
+## :triangular_ruler: Constants
 ### chalkColors
 A number of terms used consistently in the UI.
 
@@ -72,7 +82,7 @@ dingKats
 ### nsInfo
 nsInfo
 
-## RegEx
+## :bookmark: RegEx
 A number of Regex utilities.
 
 * regExCleanupText
@@ -85,7 +95,7 @@ A number of Regex utilities.
 * regExShared
 * regExTemplateAbbreviation
 
-## Functions
+## :memo: Functions
 Several functions used by genies and copykats.
 
 * inflections
