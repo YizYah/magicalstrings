@@ -50,9 +50,7 @@ export const unitPrefixes = {
 }
 
 const domains = {
-  NS_DOMAIN: 'https://www.nostack.net',
-  NS_FLIP_NPM: 'https://www.npmjs.com/package/ns-front',
-  NS_FLIP_DOMAIN: 'https://ns-flip.nostack.net/',
+  GEENEE_DOMAIN: 'https://geenee.nostack.net/',
 }
 
 export const docSubjects = {
@@ -62,11 +60,11 @@ export const docSubjects = {
   MAKING_FILES_CUSTOMIZABLE: 'Making-Files-Customizable',
 }
 export const links = {
-  DOCUMENTATION: domains.NS_FLIP_DOMAIN,
-  TEST_RESULTS: `${domains.NS_FLIP_DOMAIN}/${docSubjects.TEST_RESULTS_DOCUMENTATION}`,
-  SAFE_CODE_RULES: `${domains.NS_FLIP_DOMAIN}/${docSubjects.SAFE_CODE}`,
-  ADDING_CUSTOM_FILES: `${domains.NS_FLIP_DOMAIN}/${docSubjects.ADD_FILES}`,
-  MAKING_FILES_CUSTOMIZABLE: `${domains.NS_FLIP_DOMAIN}/${docSubjects.MAKING_FILES_CUSTOMIZABLE}`,
+  DOCUMENTATION: domains.GEENEE_DOMAIN,
+  TEST_RESULTS: `${domains.GEENEE_DOMAIN}/${docSubjects.TEST_RESULTS_DOCUMENTATION}`,
+  SAFE_CODE_RULES: `${domains.GEENEE_DOMAIN}/${docSubjects.SAFE_CODE}`,
+  ADDING_CUSTOM_FILES: `${domains.GEENEE_DOMAIN}/${docSubjects.ADD_FILES}`,
+  MAKING_FILES_CUSTOMIZABLE: `${domains.GEENEE_DOMAIN}/${docSubjects.MAKING_FILES_CUSTOMIZABLE}`,
 }
 
 export const magicStrings = {
