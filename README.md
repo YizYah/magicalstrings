@@ -14,9 +14,9 @@ You probably won't need to include this directly.  It would make more sense to u
 * [:memo: Functions](#functions)
   <!-- tocstop -->
 
-# :pushpin: API
+# <a name="api"></a>:pushpin: API
 {This will be filled out soon.}
-## :paperclip: Types
+## <a name="types"></a>:paperclip: Types
 Interfaces.
 ### Configuration
 Configuration and subTypes
@@ -33,7 +33,7 @@ CustomCodeByFile and subTypes
 * Delimiter
 * BoilerPlateInfoType
 
-## :file_folder: Config Files
+## <a name="config-files"></a>:file_folder: Config Files
 There are 3 functions for working with config files.
 ```
 const {getConfig} = require('magicalstrings').configs 
@@ -46,7 +46,7 @@ const {getIgnoredList} = require('magicalstrings').configs
 ```
 
 
-## :wrench: Settings
+## <a name="settings"></a>:wrench: Settings
 These functions are for retrieving and updating settings.
 ```
 getNsInfo
@@ -55,7 +55,7 @@ getNsInfo
 setNsInfo
 ```
 
-## :triangular_ruler: Constants
+## <a name="constants"></a>:triangular_ruler: Constants
 ### chalkColors
 A number of terms used consistently in the UI.
 
@@ -82,7 +82,7 @@ dingKats
 ### nsInfo
 nsInfo
 
-## :bookmark: RegEx
+## <a name="regex"></a>:bookmark: RegEx
 A number of Regex utilities.
 
 * regExCleanupText
@@ -95,7 +95,7 @@ A number of Regex utilities.
 * regExShared
 * regExTemplateAbbreviation
 
-## :memo: Functions
+## <a name="functions"></a>:memo: Functions
 Several functions used by genies and copykats.
 
 * inflections
