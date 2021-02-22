@@ -6,12 +6,12 @@ You probably won't need to include this directly.  It would make more sense to u
 
 <!-- toc -->
 * [:pushpin: API](#api)
-* [:paperclip: Types](##types)
-* [:file_folder: Config Files](##config-files)
-* [:wrench: Settings](##settings)
-* [:triangular_ruler: Constants](##constants)
-* [:bookmark: RegEx](##regex)
-* [:memo: Functions](##functions)
+* [:paperclip: Types](#types)
+* [:file_folder: Config Files](#config-files)
+* [:wrench: Settings](#settings)
+* [:triangular_ruler: Constants](#constants)
+* [:bookmark: RegEx](#regex)
+* [:memo: Functions](#functions)
   <!-- tocstop -->
 
 # :pushpin: API
