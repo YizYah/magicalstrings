@@ -1,6 +1,6 @@
 A lot of constants and some incantations for working with genies. Used with [geenee](https://www.npmjs.com/package/geenee) tools.
 
-![](images/MAGICALSTRINGS-GIF.gif)
+![magicalstrings gif](images/magicalstrings-new.gif)
 
 You probably won't need to include this directly.  It would make more sense to use tools that access it, such as [copyKat](https://www.npmjs.com/package/copykat).
 
