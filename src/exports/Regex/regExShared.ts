@@ -1,4 +1,4 @@
-import {Delimiters} from "../types/general";
+import {Delimiters} from "../constants/types/general";
 
 export const commentOpen = '(\\/\\/|\\/\\*)'
 export const commentClose = '(\\n|\\*\\/)'
