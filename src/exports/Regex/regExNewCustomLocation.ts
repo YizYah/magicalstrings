@@ -3,8 +3,8 @@ import {
   openingMarkerForDelimiters,
   closingMarkerForDelimiters,
 } from './regExShared'
-import {markupTags} from '..'
-import {Delimiters} from "../types/general";
+import {markupTags} from '../constants'
+import {Delimiters} from "../constants/types/general";
 
 // const openCustom = openingMarker(markupTags.CUSTOM_START)
 // const closeCustom = closingMarker(markupTags.CUSTOM_END)

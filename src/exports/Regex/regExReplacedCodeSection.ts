@@ -4,8 +4,8 @@ import {
   openingMarkerForDelimiters,
   closingMarkerForDelimiters,
 } from './regExShared'
-import {markupTags} from '..'
-import {Delimiters} from "../types/general";
+import {markupTags} from '../constants'
+import {Delimiters} from "../constants/types/general";
 
 // for saving replaced code
 // const openReplacement = openingMarker(markupTags.REPLACEMENT_START) // `${opening}${markupTags.REPLACEMENT_START}${specString}${closing}`

@@ -1,4 +1,4 @@
-import {META_DELIMITER} from '..'
+import {META_DELIMITER} from '../constants'
 
 const objectName = '[a-zA-Z]+'
 const key = '(.|\\.)*'

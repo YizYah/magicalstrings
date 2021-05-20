@@ -6,9 +6,35 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
+    "commit": "git-cz",
     "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "eslint \"src/**\"",
-    "test": "eslint \"src/**\""
+    "lint": "eslint \"src/**/*.ts\"",
+    "lintfix": "eslint \"src/**/*.ts\" --fix",
+    "test": "ava",
+    "posttest": "npm run view-coverage && npm run report && npm run lint",
+    "prepack": "rm -rf lib && tsc -b",
+    "report": "nyc report --reporter=json",
+    "semantic-release": "semantic-release",
+    "view-coverage": "nyc --extension .ts ava --forbid-only"
+  },
+  "ava": {
+    "files": [
+      "test/**/*.test.ts"
+    ],
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run test"
+    }
   },
   "files": [
     "lib/**/*"
@@ -25,10 +51,17 @@
   },
   "homepage": "https://github.com/YizYah/magicalstrings#readme",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.12.0",
-    "@typescript-eslint/parser": "^4.12.0",
-    "eslint": "^7.17.0",
-    "prettier": "^2.2.1"
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "ava": "^3.15.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.2.0",
+    "eslint": "^7.26.0",
+    "ghooks": "^2.0.4",
+    "nyc": "^15.1.0",
+    "prettier": "^2.2.1",
+    "semantic-release": "^17.4.3",
+    "ts-node": "^9.1.1"
   },
   "dependencies": {
     "@types/node": "^14.14.19",
