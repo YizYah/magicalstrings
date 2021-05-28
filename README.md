@@ -56,6 +56,8 @@ setNsInfo
 ```
 
 ## <a name="constants"></a>:triangular_ruler: Constants
+A lot of these constants are being moved out gradually to more relevant packages.
+
 ### chalkColors
 A number of terms used consistently in the UI.
 
@@ -72,7 +74,7 @@ A number of terms used consistently in the UI.
 custom
 
 ### schema
-schema
+Please note: the `Schema` type has been moved to the [stack-info](https://www.npmjs.com/package/stack-info) package.  This is a **Breaking Change**!!!
 
 ### dingbats
 ```
